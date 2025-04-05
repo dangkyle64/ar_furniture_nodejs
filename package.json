@@ -8,6 +8,7 @@
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "multer": "^1.4.5-lts.2",
+    "opencv4nodejs-prebuilt-install": "^4.1.209",
     "vitest": "^3.1.1"
   }
 }
