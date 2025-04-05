@@ -2,7 +2,7 @@ import fs from 'fs';
 import cv from 'opencv4nodejs-prebuilt-install';
 
 export const processVideo = async (videoBuffer) => {
-    const tempVideoPath = './temp_video.mp4';
+    const tempVideoPath = './recorded-video.webm';
     
     fs.writeFileSync(tempVideoPath, videoBuffer);
 

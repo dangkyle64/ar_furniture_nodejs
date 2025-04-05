@@ -12,7 +12,7 @@ export const postUploadVideoController = async (request, response) => {
         const result = await processVideo(videoBuffer);
 
         response.status(200).json({
-            //result: result,
+            result: result,
             message: 'Video processed successfully',
         });
     } catch(error) {
