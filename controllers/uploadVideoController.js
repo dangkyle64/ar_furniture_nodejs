@@ -16,7 +16,7 @@ export const postUploadVideoController = async (request, response) => {
             message: 'Video processed successfully',
         });
     } catch(error) {
-        //console.error('Error processing video:', error);
+        console.error('Error processing video:', error);
         response.status(500).json({ error: 'Error processing video' });
     };
 };
