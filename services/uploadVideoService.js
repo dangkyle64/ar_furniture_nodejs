@@ -37,7 +37,7 @@ export const processVideo = async (videoBuffer) => {
         });
         
     } catch(error) {
-        console.error('Error processing video:', err);
+        console.error('Error processing video:', error);
     };
 };
 
