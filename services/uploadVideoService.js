@@ -4,7 +4,7 @@ import ffmpeg from 'fluent-ffmpeg';
 
 export const processVideo = async (videoBuffer) => {
     const tempVideoPath = './recorded-video.webm';
-    const tempMp4Path = './temp-vide-.mp4';
+    const tempMp4Path = './temp-video.mp4';
 
     fs.writeFileSync(tempVideoPath, videoBuffer);
 
@@ -18,11 +18,12 @@ export const processVideo = async (videoBuffer) => {
         let frames = [];
 
         while(true) {
-            frame  = videoCaptureObj.read();
+            frame = videoCaptureObj.read();
 
             if (frame.empty) {
                 break;
             };
+            frames.push(frame);
             frameCount++;
         };
 
